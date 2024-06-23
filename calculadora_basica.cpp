@@ -2,7 +2,8 @@
 #include<stdlib.h>
 using namespace std;
 int main(){
-	int num1,num2, r,op;
+	double num1,num2, r;
+	int op;
 
 	do{
 		system("cls");
@@ -17,30 +18,38 @@ int main(){
 		cout<<"0. Salir"<<endl;
 		cout<<"Opcion: "; cin>>op;
 		switch(op){
-			case 1: r=num1+num2;
-				cout<<"Resultado: "<<r<<endl;
+			case 1: 
+				system("cls");
+				r=num1+num2;
+				cout<<"La suma de "<<num1<<" y "<<num2<<" es: "<<r<<endl;
 				system("pause");
 				break;
-			case 2: r=num1-num2;
-				cout<<"Resultado: "<<r<<endl;	
+			case 2: 
+				system("cls");
+				r=num1-num2;
+				cout<<"La diferencia de "<<num1<<" y "<<num2<<" es: "<<r<<endl;	
 				system("pause");
 				break;
-			case 3: r=num1*num2;
-				cout<<"Resultado: "<<r<<endl;
+			case 3: 
+				system("cls");
+				r=num1*num2;
+				cout<<"El producto de "<<num1<<" por "<<num2<<" es: "<<r<<endl;
 				system("pause");
 				break;
 			case 4: 
+					system("cls");
 					if(num2==0){
 						cout<<"Indeterminado"<<endl;
 						system("pause");
 					}
 					else{
 						r=num1/num2;
-						cout<<"Resultado: "<<r<<endl;
+						cout<<"La division de "<<num1<<" entre "<<num2<<" es: "<<r<<endl;
 						system("pause");
 					}
 				break;
 			case 0: 
+				system("cls");
 				cout<<"El programa se cerrara"<<endl;
 				system("pause");
 				break;
